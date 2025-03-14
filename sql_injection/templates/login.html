@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | MemeVerse</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-container">
+            <h2>Welcome to MemeVerse</h2>
+            <p>Please log in to continue</p>
+            {% if error %}
+            <div class="alert">{{ error }}</div>
+            {% endif %}
+            <form method="post">
+                <input type="text" name="username" placeholder="Username" required autofocus>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <!--
+                Hint: This login is vulnerable to SQL injection.
+                For example, try: admin' OR '1'='1
+            -->
+        </div>
+    </div>
+</body>
+</html>
