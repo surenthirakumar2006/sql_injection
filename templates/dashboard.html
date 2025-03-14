@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | MemeVerse</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1>MemeVerse Dashboard</h1>
+      <nav>
+        <a href="/home">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Settings</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="welcome">
+      <h2>Hello, {{ user }}!</h2>
+      <p>Welcome back to MemeVerse! Enjoy your personalized dashboard where you can find the latest memes, Marvel movie reviews, and community updates.</p>
+    </section>
+    
+    <section class="dashboard-content">
+      <div class="card">
+        <h3>Trending Memes</h3>
+        <p>Explore the memes that are currently taking over social media. From coding humor to Marvel mishaps, there's something for everyone!</p>
+      </div>
+      <div class="card">
+        <h3>Marvel Reviews</h3>
+        <p>Read in-depth reviews and analysis of the latest Marvel films. Our community of experts breaks down every detail, so you don't miss a beat.</p>
+      </div>
+      <div class="card">
+        <h3>Upcoming Events</h3>
+        <p>Get notified about upcoming meme contests, Marvel watch parties, and exclusive community events. Stay tuned for more fun!</p>
+      </div>
+    </section>
+    
+    <section class="extra">
+      <h3>Member Spotlight</h3>
+      <p>This month, we’re featuring our top contributor for hilarious memes and insightful Marvel trivia. Check out their profile to see their best posts!</p>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 MemeVerse. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- Hidden flag: Reveal by viewing the page source -->
+  <div class="hidden-flag" style="display: none;">FLAG{MEMEVERSE_SQLI}</div>
+</body>
+</html>

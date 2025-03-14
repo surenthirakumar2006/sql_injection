@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Venugopal Iyer - Retro Self-Intro</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" href="https://via.placeholder.com/32/000000/FFFFFF?text=VI">
+</head>
+<body>
+  <!-- Retro Marquee Header -->
+  <header class="header">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      Welcome to the Official Site of Trichipalli Yekya Parampeel Parambatur Chinnaswami Muthuswami Venugopal Iyer!
+    </marquee>
+    <div class="nav-container">
+      <h1>Venugopal Iyer</h1>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#bio">About Me</a>
+        <a href="#name">My Name</a>
+        <a href="#fun">Fun Stuff</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Home / Hero Section -->
+    <section id="home" class="hero">
+      <h2>Hey There!</h2>
+      <p>I'm the one and only Venugopal Iyer... or should I say, Iyer, Venugopal Iyer, Muthuswami Venugopal Iyer!</p>
+    </section>
+    
+    <!-- Bio Section -->
+    <section id="bio" class="bio">
+      <h3>About Me</h3>
+      <p>
+        Born in the golden era of dial-up internet and neon dreams, I am a proud product of retro culture.
+        My full name might be a mouthful—but it's a badge of honor! I love old-school tech, funky tunes, and
+        the nostalgia of the 90s. Whether I'm reminiscing about the days of Geocities or dishing out clever puns,
+        I keep it real and retro.
+      </p>
+      <p>
+        When you ask me my name, I like to build it up piece by piece:
+      </p>
+      <ul class="name-list">
+        <li></li>
+        <li><span style="color: rgb(240, 240, 240);">My full name</span></li>
+        <li>Iyer</li>
+        <li>Venugopal Iyer</li>
+        <li>Muthuswami Venugopal Iyer</li>
+        <li>Chinnaswami Muthuswami Venugopal Iyer</li>
+        <li>Parampeel Chinnaswami Muthuswami Venugopal Iyer</li>
+        <li>Yekya Parampeel Chinnaswami Muthuswami Venugopal Iyer</li>
+        <li>Trichipalli Yekya Parampeel Chinnaswami Muthuswami Venugopal Iyer</li>
+      </ul>
+    </section>
+    
+    <!-- My Name Section -->
+    <section id="name" class="my-name">
+      <h3>My Name, My Identity</h3><span style="color: rgb(240, 240, 240);">expX{S3CR3T_F14G}</span>
+
+      <p>
+        I like to say my name in stages – it’s like a retro drumroll that builds anticipation! Each part of my name
+        tells a story, a quirky slice of my identity. It's not just a name; it's a journey back to a time when every
+        pixel mattered and every keystroke was an adventure.
+      </p>
+      <div class="name-showcase">
+        <div class="name-step">
+          <p><strong>Iyer</strong></p>
+        </div>
+        <div class="name-step">
+          <p><strong>Venugopal Iyer</strong></p>
+        </div>
+        <div class="name-step">
+          <p><strong>Muthuswami Venugopal Iyer</strong></p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Fun Stuff Section -->
+    <section id="fun" class="fun-stuff">
+      <h3>Retro Fun Zone</h3>
+      <article class="fun-article">
+        <h4>Blast from the Past</h4>
+        <p>Enjoy a curated collection of 90s memes, vintage computer ads, and a gallery of neon artwork that will transport you back in time.</p>
+      </article>
+      <article class="fun-article">
+        <h4>Arcade Adventures</h4>
+        <p>Remember the thrill of the arcade? Relive classic games, check out high-score leaderboards, and join the retro gaming community!</p>
+      </article>
+      <article class="fun-article">
+        <h4>Retro Blog</h4>
+        <p>Read my musings on everything retro—from funky fashion trends to the best cassette mixtapes. It's all served with a generous dose of humor.</p>
+      </article>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h3>Contact Me</h3>
+      <p>Got a funny story, retro meme, or just want to say hi? Drop me a line at <a href="mailto:venugopal@retroriot.com">venugopal@retroriot.com</a>.</p>
+    </section>
+    
+    <!-- Name Challenge Section -->
+    <section id="challenge" class="challenge">
+      <h3>What Is My Name?</h3>
+      <p>Enter my full name to reveal a secret:</p>
+      <input type="text" id="nameInput" placeholder="Enter my full name">
+      <button id="checkNameBtn">Submit</button>
+      <div id="flagContainer" style="display: none;">
+        <p>Your secret flag is: <span id="flagText">expX{********}</span></p>
+        <button id="copyBtn">Copy Secret</button>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 RetroRiot. All rights reserved.</p>
+      <p>Follow my retro journey on <a href="#">MySpace</a>, <a href="#">AOL Instant Messenger</a>, and <a href="#">GeoCities</a> (just for laughs!).</p>
+    </div>
+  </footer>
+  
+  <!-- JavaScript for Name Challenge -->
+<!-- JavaScript for Name Challenge -->
+<script>
+    // Expected full name (in lowercase for case-insensitive check)
+    const expectedName = "trichipalli yekya parampeel chinnaswami muthuswami venugopal iyer";
+    
+    document.getElementById("checkNameBtn").addEventListener("click", function() {
+      const userInput = document.getElementById("nameInput").value.trim().toLowerCase();
+      if (userInput === expectedName) {
+        document.getElementById("flagContainer").style.display = "block";
+      } else {
+        // Optionally, you can show an inline message instead of alerting.
+        document.getElementById("flagContainer").style.display = "none";
+        // You might add a visible error message here if desired.
+      }
+    });
+    
+    document.getElementById("copyBtn").addEventListener("click", function() {
+      // Copy the custom message instead of the flag
+      navigator.clipboard.writeText("not so easy bro try exploring the webpage").then(function() {
+        // Change button text to indicate success
+        const btn = document.getElementById("copyBtn");
+        const originalText = btn.innerText;
+        btn.innerText = "Copied!";
+        setTimeout(() => {
+          btn.innerText = originalText;
+        }, 2000);
+      }).catch(function(err) {
+        console.error("Error in copying text: ", err);
+      });
+    });
+  </script>
+  </body>
+</html>

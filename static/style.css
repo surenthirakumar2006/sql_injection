@@ -1,0 +1,372 @@
+/* CSS Variables for RetroRiot Theme */
+:root {
+  --primary-color: #ff3399; /* Vibrant pink */
+  --secondary-color: #003366; /* Deep blue */
+  --accent-color: #00cc66; /* Neon green */
+  --background-color: #f0f0f0;
+  --navbar-bg: #003366;
+  --navbar-text: #ffffff;
+  --border-radius: 8px;
+  --transition-speed: 0.3s;
+  --font-main: 'Courier New', Courier, monospace;
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* Center the login box on the page */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* or 100vh minus some offset */
+}
+
+/* Retro Windows 9x Style Container */
+.login-container {
+  background-color: #dcdcdc; /* Classic Win 9x gray */
+  width: 300px;
+  padding: 20px;
+  /* 3D inset border effect */
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #999;
+  border-bottom: 2px solid #999;
+  /* Optionally add a slight box-shadow for a subtle lift */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading & Description */
+.login-container h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #000080; /* Dark navy for a classic Windows feel */
+}
+
+.login-container p {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Alert / Error Message */
+.alert {
+  background-color: #ffecec;
+  color: #b30000;
+  border: 1px solid #ff5c5c;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #999;
+  font-size: 0.9rem;
+  color: #000;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Button */
+.login-container button {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #999;
+  background-color: #e0e0e0; /* Light gray button */
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #c0c0c0; /* Slightly darker gray on hover */
+}
+
+
+  
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Header & Navbar */
+.header {
+  background-color: var(--navbar-bg);
+  color: var(--navbar-text);
+  padding: 0.5rem 0;
+}
+
+.header marquee {
+  background: var(--accent-color);
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #000;
+}
+
+.nav-container {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.nav-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navbar a {
+  color: var(--navbar-text);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color var(--transition-speed);
+}
+
+.navbar a:hover {
+  color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+
+/* Bio Section */
+.bio {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.bio h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.bio p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Name List */
+.name-list {
+  list-style-type: none;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  padding: 0;
+  max-width: 600px;
+}
+
+.name-list li {
+  padding: 0.3rem;
+  border-bottom: 1px dotted var(--accent-color);
+}
+
+/* My Name Section */
+.my-name {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.my-name h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.name-showcase {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.name-step {
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent-color);
+  border-radius: var(--border-radius);
+  font-weight: bold;
+}
+
+/* Fun Stuff Section */
+.fun-stuff {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.fun-stuff h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.fun-article {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #fff;
+  border: 1px dashed var(--accent-color);
+  border-radius: var(--border-radius);
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.fun-article h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.fun-article p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Contact Section */
+.contact {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.contact h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.contact p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background: var(--navbar-bg);
+  color: var(--navbar-text);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+.footer a:hover {
+  color: var(--primary-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .name-showcase {
+    flex-direction: column;
+  }
+}
+
+
+/* Challenge Section */
+.challenge {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px dashed var(--accent-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.challenge h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.challenge p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Style for the input field in the challenge section */
+.challenge input[type="text"] {
+  width: 80%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Style for the challenge buttons */
+.challenge button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+  margin: 0.5rem;
+}
+
+.challenge button:hover {
+  background-color: var(--accent-color);
+}
