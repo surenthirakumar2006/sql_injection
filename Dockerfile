@@ -16,5 +16,5 @@ COPY setup.py .
 # Expose port (Ensure Flask is configured to use this port)
 EXPOSE 1212 
 
-# Run the application properly in foreground
-CMD ["python3", "setup.py" ,"app.py"]
+# Run setup.py first, then start the Flask app
+CMD ["/bin/sh", "-c", "python3 setup.py && python3 app.py"]
